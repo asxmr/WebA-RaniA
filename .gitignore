@@ -7,12 +7,49 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+# Runtime & diagnostics
+report.*.json
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
+
+# Dependency directories
+node_modules/
+bower_components
+jspm_packages/
+web_modules/
+
+# Build output
 dist
 dist-ssr
-*.local
+build/
+out
+.next
+.nuxt
+.vuepress/dist
+.vitepress/dist
+.vitepress/cache
 
-# Editor directories and files
+# Caches
+.cache
+.parcel-cache
+.rpt2_cache/
+.rts2_cache_*
+.fusebox/
+.docusaurus
+.serverless/
+.dynamodb/
+.npm
+.eslintcache
+.stylelintcache
+
+# Editor
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -22,3 +59,34 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# TypeScript
+*.tsbuildinfo
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.yarn-integrity
+
+# REPL history
+.node_repl_history
+
+# npm pack output
+*.tgz
+
+# Environment files
+.env
+.env.*.local
+
+# Grunt
+.grunt
+
+# Snowpack
+web_modules/
+
+# Testing
+.vscode-test
+.tern-port
